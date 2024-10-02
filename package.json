@@ -1,0 +1,30 @@
+{
+	"name": "septembit-24",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"prebuild": "svelte-kit sync",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "prettier --check .",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.2.5",
+		"@sveltejs/adapter-vercel": "^5.4.4",
+		"@sveltejs/enhanced-img": "^0.3.8",
+		"@sveltejs/kit": "^2.6.1",
+		"@sveltejs/vite-plugin-svelte": "4.0.0-next.7",
+		"autoprefixer": "^10.4.20",
+		"postcss": "^8.4.47",
+		"postcss-import": "^16.1.0",
+		"postcss-nesting": "^13.0.0",
+		"prettier": "^3.3.3",
+		"prettier-plugin-svelte": "^3.2.7",
+		"svelte": "5.0.0-next.260",
+		"vite": "^5.4.8"
+	},
+	"type": "module",
+	"packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c"
+}

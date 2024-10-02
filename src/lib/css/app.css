@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* Stuff */
+@font-face {
+	font-family: 'KiwiSoda';
+	src: url('./KiwiSoda.ttf');
+}
+
+:root {
+	--c1: #0d2e39;
+	--c2: #d3fdc8;
+	--c3: #799e86;
+	--c4: #395b55;
+}
+
+img {
+	image-rendering: pixelated;
+}
+
+body {
+	background-color: var(--c1);
+	color: var(--c2);
+	font-family: 'KiwiSoda', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	letter-spacing: 0.05em;
+}
