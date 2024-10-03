@@ -2,6 +2,10 @@
 	import { bits } from '$lib/bits';
 </script>
 
+<svelte:head>
+	<title>Septembit 2024 - Mister_Simon</title>
+</svelte:head>
+
 <main>
 	<h1>Septembit 2024 - mister_simon</h1>
 	<div class="bits">
