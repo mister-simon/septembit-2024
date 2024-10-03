@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Septembit 2024 - Mister_Simon</title>
+	<title>Septembit 2024 - mister_simon</title>
 </svelte:head>
 
 <main>
