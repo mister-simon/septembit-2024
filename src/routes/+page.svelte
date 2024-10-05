@@ -41,12 +41,24 @@
 		</blockquote>
 	</div>
 
-	<figure class="complete">
+	<div class="complete">
 		<img
 			src={Septembit}
 			alt="Completed Septembit Template. Titled Monster Maker Septembit 2024 above a grid for the 30 days of prompts. The bottom of the template shows @saultoons, #septembit, a space for the colour palette, and mister_simon."
 		/>
-	</figure>
+		<nav>
+			{#each bits as bit}
+				<a
+					href={`#bit-${bit.id}`}
+					class={`bit-${bit.day}`}
+					style:--row={Math.floor((bit.day - 1) / 9)}
+					style:--col={Math.floor((bit.day - 1) % 9)}
+				>
+					<span class="visually-hidden">{bit.name}</span>
+				</a>
+			{/each}
+		</nav>
+	</div>
 
 	<div class="bits">
 		{#each bits as bit}
@@ -76,6 +88,9 @@
 </footer>
 
 <style>
+	[id] {
+		scroll-margin-top: 4rem;
+	}
 	main {
 		--border: 0.75vw;
 		font-size: clamp(2rem, 1.5vw, 3rem);
@@ -136,6 +151,60 @@
 	}
 	.complete {
 		margin-block-end: 16rem;
+		display: grid;
+		grid-template-areas: 'stack';
+		position: relative;
+		isolation: isolate;
+
+		> * {
+			grid-area: stack;
+		}
+
+		nav {
+			position: relative;
+			overflow: hidden;
+		}
+
+		a {
+			display: block;
+			aspect-ratio: 1;
+			opacity: 0;
+			box-shadow: 0 0 5vw 5vw color-mix(in srgb, var(--c1), transparent 20%);
+			border: solid var(--border) var(--c2);
+			transition: opacity 100ms ease-in-out;
+			scale: 1.1;
+
+			--size: 9.5%;
+			--gap-x: 0.5%;
+			--gap-y: 1.1%;
+			--top: 26.5%;
+			--left: 5.2%;
+
+			width: var(--size);
+
+			position: absolute;
+			top: calc(var(--top) + ((var(--size) + var(--gap-y)) * var(--row)));
+			left: calc(var(--left) + ((var(--size) + var(--gap-x)) * var(--col)));
+
+			&.bit-28,
+			&.bit-29,
+			&.bit-30 {
+				--size: 27.3%;
+				--gap-x: 3%;
+				--left: 6%;
+
+				top: 59.7%;
+			}
+
+			&:focus,
+			&:hover {
+				opacity: 1;
+			}
+		}
+
+		img {
+			width: 100%;
+		}
 	}
 	.description {
 		word-break: break-word;
