@@ -41,7 +41,7 @@
 		</blockquote>
 	</div>
 
-	<figure>
+	<figure class="complete">
 		<img
 			src={Septembit}
 			alt="Completed Septembit Template. Titled Monster Maker Septembit 2024 above a grid for the 30 days of prompts. The bottom of the template shows @saultoons, #septembit, a space for the colour palette, and mister_simon."
@@ -133,6 +133,9 @@
 		display: grid;
 		width: fit-content;
 		margin-inline: auto;
+	}
+	.complete {
+		margin-block-end: 16rem;
 	}
 	.description {
 		word-break: break-word;
