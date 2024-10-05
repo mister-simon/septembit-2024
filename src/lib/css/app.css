@@ -44,12 +44,19 @@ h6 {
 	font-family: 'KiwiSoda';
 	src: url('./KiwiSoda.ttf');
 }
+@font-face {
+	font-family: 'Gamer';
+	src: url('./Gamer.ttf');
+}
 
 :root {
 	--c1: #0d2e39;
 	--c2: #d3fdc8;
 	--c3: #799e86;
 	--c4: #395b55;
+
+	--f1: 'KiwiSoda', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	--f2: 'Gamer', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 img {
@@ -59,6 +66,6 @@ img {
 body {
 	background-color: var(--c1);
 	color: var(--c2);
-	font-family: 'KiwiSoda', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-family: var(--f1);
 	letter-spacing: 0.05em;
 }

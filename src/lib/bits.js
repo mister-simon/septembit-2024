@@ -14,8 +14,9 @@ function getImg(day) {
 
 let day = 1;
 
-function createBit(prompt, name, description, size = 32) {
+function createBit(prompt, name, description, note = null, size = 32) {
     const currentDay = day++;
+    const id = String(currentDay).padStart(2, '0');
 
     return {
         day: currentDay,
@@ -23,7 +24,9 @@ function createBit(prompt, name, description, size = 32) {
         prompt,
         name,
         description,
+        note,
         size,
+        id
     }
 }
 
@@ -56,7 +59,7 @@ export const bits = [
     createBit(
         'Electric',
         `The Stormflower`,
-        `he deadly cousin to the sunflower... Stores energy in it's bulb shaped flower, uses it's wide network of roots to complete a circuit to anything that gets too close.`
+        `The deadly cousin to the sunflower... Stores energy in it's bulb shaped flower, uses it's wide network of roots to complete a circuit to anything that gets too close.`
     ),
     createBit(
         'Flying',
@@ -167,18 +170,21 @@ export const bits = [
         'Evolve',
         `Gaspartments`,
         `When the old balloon factory was knocked down, we didn't anticipate all the displaced gasprites would fight back...`,
+        `An evolution of <a href="#bit-18">18 - Gasprite</a>`,
         96
     ),
     createBit(
         'Combine',
         `Psychic Mechtato`,
         `When the Mechtato Mk.2200 went bad we were all worried. When it suddenly started offensively using psy-tech we were truly terrified.`,
+        `A combination of <a href="#bit-20">20 (Psymon)</a> + <a href="#bit-12">12 (Mechtato)</a>`,
         96
     ),
     createBit(
         'Mythical',
         `Mythicalago`,
         `Even people who believe in Bigfoot don't seem to believe in the Mythicalago - a mountainous white rabbit. They're as huge as they are adorable.`,
+        `...`,
         96
     )
 ];
