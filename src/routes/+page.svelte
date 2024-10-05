@@ -41,7 +41,7 @@
 		</blockquote>
 	</div>
 
-	<div class="complete">
+	<div class="complete" id="complete">
 		<img
 			src={Septembit}
 			alt="Completed Septembit Template. Titled Monster Maker Septembit 2024 above a grid for the 30 days of prompts. The bottom of the template shows @saultoons, #septembit, a space for the colour palette, and mister_simon."
@@ -59,6 +59,12 @@
 			{/each}
 		</nav>
 	</div>
+
+	<!-- <div class="return">
+		<a href="#complete">
+			<img src={Septembit} alt="Back to overview" />
+		</a>
+	</div> -->
 
 	<div class="bits">
 		{#each bits as bit}
@@ -90,6 +96,13 @@
 <style>
 	[id] {
 		scroll-margin-top: 4rem;
+	}
+	.return {
+		position: sticky;
+		top: 0;
+		right: 0;
+		display: flex;
+		justify-content: flex-end;
 	}
 	main {
 		--border: 0.75vw;
