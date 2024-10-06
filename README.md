@@ -20,6 +20,7 @@ After forking the repo and cloning it down to edit:
 - If your completed template has been heavily customised, the jump links overlaid on the page won't be accurate. So you'll need to [restyle the `.complete` css](https://github.com/mister-simon/septembit-2024/blob/aee34d119b2cbb1c8c45ee1f2a13e47e69b1e115/src/routes/%2Bpage.svelte#L181) in the following step.
 - Update the content of the page `src/routes/+page.svelte` however you like. Swapping in your own username. Add links. Add and remove features. Restyle sections. Go wild.
 - Finally, generate a favicon (I used https://favicon.io/favicon-converter/) and drop the files into the `static` folder. You can also add a `favicon.gif` of one of your 32px works. Changes to favicon loading can be made via `src/app.html`.
+- Final note: I'm hosting using vercel. If you aren't going to use vercel then look up how to swap sveltekit adapters for your chosen hosting method.
 
 ## Building
 
