@@ -106,15 +106,16 @@
 	}
 	main {
 		--border: 0.75vw;
-		font-size: clamp(2rem, 1.5vw, 3rem);
-		padding-inline: clamp(1rem, 5vw, 3rem);
+		font-size: var(--step-1);
+		max-width: min(1400px, 100% - clamp(1rem, 5vw, 3rem));
+		margin-inline: auto;
 		padding-block: 10vh;
 		display: grid;
 		row-gap: 8rem;
 	}
 	footer {
 		color: var(--c4);
-		font-size: clamp(1rem, 1.25vw, 2rem);
+		font-size: var(--step-0);
 		padding-inline: clamp(1rem, 5vw, 3rem);
 		text-align: center;
 	}
@@ -139,13 +140,13 @@
 		font-family: var(--f2);
 	}
 	h1 {
-		font-size: clamp(4rem, 5vw, 8rem);
+		font-size: var(--step-5);
 	}
 	.text-lg {
-		font-size: clamp(2.5rem, 4vw, 6rem);
+		font-size: var(--step-4);
 	}
 	h2 {
-		font-size: clamp(2rem, 3vw, 4rem);
+		font-size: var(--step-3);
 
 		span {
 			color: var(--c3);
@@ -223,7 +224,7 @@
 		word-break: break-word;
 	}
 	.prompt {
-		font-size: clamp(1.5rem, 2.5vw, 3rem);
+		font-size: var(--step-1);
 		color: var(--c3);
 	}
 	.note {
@@ -242,7 +243,7 @@
 	}
 	.bits {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(min(100%, 35ch), 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(min(100%, 33ch), 1fr));
 		gap: 5vw;
 	}
 	figure {

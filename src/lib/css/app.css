@@ -66,6 +66,13 @@ h6 {
 
 	--f1: 'KiwiSoda', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	--f2: 'Gamer', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+	--step-0: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+	--step-1: clamp(1.35rem, 1.24rem + 0.55vw, 1.6663rem);
+	--step-2: clamp(1.62rem, 1.4109rem + 1.0454vw, 2.2211rem);
+	--step-3: clamp(1.944rem, 1.5904rem + 1.7682vw, 2.9607rem);
+	--step-4: clamp(2.3328rem, 1.7715rem + 2.8067vw, 3.9467rem);
+	--step-5: clamp(2.7994rem, 1.9432rem + 4.281vw, 5.2609rem);
 }
 
 img {
